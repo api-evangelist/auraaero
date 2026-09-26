@@ -1,23 +1,69 @@
 aid: auraaero
+
 name: Auraaero
+
+image: https://aura.aero/wp-content/uploads/2022/12/Aura-Ranger-EVTOL-11-scaled.jpg
+
 description: 'Auraaero is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
   and added to the network as a stub for full-pipeline profiling.'
+
 url: https://raw.githubusercontent.com/api-evangelist/auraaero/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-26 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-26'
+
 modified: '2026-09-26'
+
 tags:
-- Company
-apis: []
+- EVTOL
+- Aircraft
+- Hybrid EVTOL
+- Ultra‑Long Range
+- Batteries
+- Powercell
+- Aviation
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/auraaero-hosts.yml
+- type: TermsOfService
+  url: https://aura.aero/terms/
+- type: PrivacyPolicy
+  url: https://aura.aero/privacy-policy/
+- type: Newsroom
+  url: https://aura.aero/news/
+- type: DomainSecurity
+  url: security/auraaero-domain-security.yml
 - type: Website
-  url: https://equityzen.com/company/auraaero
+  url: https://aura.aero
+
+apis: []
+
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: No public developer program or API documentation is available on aura.aero.
+  evidence:
+    - url: https://aura.aero
+      status: 200
+  checked: 2026-09-26
+x-enrichment:
+  date: '2026-09-26'
+  status: enriched
+  artifacts_added: 5
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local
